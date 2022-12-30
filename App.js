@@ -1,5 +1,5 @@
 import React from 'react';
-import Hal1 from './halaman/hal1';
+import Hal1 from './Screen/Main';
 
 const App = () => {
   return(
