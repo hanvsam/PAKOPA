@@ -17,52 +17,56 @@ const Hal1 = () => {
   //   headerBackTitle: '',
   //   headerShown: false
   // })
-
+  const [text, onChangeText] = React.useState("");
   return(
     
     <View style={styles.all}>
+
       {/* --- SEARCH BAR --- */}
+      <View style={styles.at}>
       <View style={styles.atas}>
-        <Image style={styles.img0} source={{ uri: 'https://www.travelingajadulu.com/wp-content/uploads/2020/03/singapore-1-960x600.jpg?w=200&h=200' }}/>
+        {/* <Image style={styles.img0} source={{ uri: 'https://www.travelingajadulu.com/wp-content/uploads/2020/03/singapore-1-960x600.jpg?w=200&h=200' }}/>  */}
         <View style={styles.sb}>
-          <Text style={styles.tb}>Cari Wisata Kamu</Text>
+          <TextInput style={styles.tb} onChangeText={onChangeText} value={text} placeholder="Cari Wisata Kamu"></TextInput>
         </View>
         <Image style={styles.img0} source={{ uri: 'https://www.travelingajadulu.com/wp-content/uploads/2020/03/singapore-1-960x600.jpg?w=200&h=200' }}/>
       </View>
+      </View>
+      
 
       <ScrollView>
       {/* --- WELCOME SECTION --- */}
       <View style={{ marginTop: 10 }}>
-        <Image style={styles.img1} source={{ uri: 'https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg?impolicy=fcrop&w=1600&h=1066&q=medium' }}/>
+        <Image style={styles.img1} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/klayar-via-pambudi-yoga-perdana.jpg?alt=media&token=b0dca9ff-da74-484b-b6bd-cf100ab8ebfb' }}/>
         <View style={styles.lp1}>
-          <Text style={{ fontSize: 18, color: '#FFF' }}>Welcome to</Text>
-          <Text style={{ fontSize: 21, color: '#FFF', fontWeight: 'bold' }}>PAKOPA App</Text>
+          <Text style={{ fontSize: 22, color: '#FFF', fontFamily: 'manrope', fontWeight: 'bold'}}>Selamat Datang</Text>
+          <Text style={{ fontSize: 18, color: '#FFF'}}>Di Kota 1001 Goa</Text>
         </View>
       </View>
       
       {/* --- RECENT SECTION --- */}
       <View style={{ paddingLeft: 20, marginVertical: 20 }}>
-        <Text style={{ fontSize: 16, color: '#FFF', fontWeight: 'bold' }}>Recents</Text>
+        <Text style={{ fontSize: 16, color: '#FFF', fontWeight: 'bold' }}>Destinasi Terbaik</Text>
         <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} style={{ marginTop: 10 }}>
           <View>
-            <Image style={styles.img2} source={{ uri: 'https://www.travelingajadulu.com/wp-content/uploads/2020/03/singapore-1-960x600.jpg?w=200&h=200' }}/>
-            <Text style={styles.tr}>Singapore</Text>
+            <Image style={styles.img2} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/stalaktit-atau-stalakmit-goa-gong-1024x1024.jpg?alt=media&token=40bb1e24-d82e-4117-8964-e5899041186a' }}/>
+            <Text style={styles.tr}>Goa Gong</Text>
           </View>
           <View style={{ marginLeft: 10 }}>
-            <Image style={styles.img2} source={{ uri: 'https://i0.wp.com/www.montcalmroyallondoncity.co.uk/blog/wp-content/uploads/2017/07/shutterstock_107597459.jpg?fit=1000%2C667&ssl=1' }}/>
-            <Text style={styles.tr}>London</Text>
+            <Image style={styles.img2} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/14676648_996382120472591_3001109647915483136_n-1.jpg?alt=media&token=ff5422f7-fd53-4cf4-9dae-b24391e5c6c3' }}/>
+            <Text style={styles.tr}>Pantai Watukarung</Text>
           </View>
           <View style={{ marginLeft: 10 }}>
-            <Image style={styles.img2} source={{ uri: 'https://www.telegraph.co.uk/content/dam/Travel/Destinations/North%20America/USA/New%20York/Attractions/statue-of-liberty-new-york-p.jpg' }}/>
-            <Text style={styles.tr}>New York</Text>
+            <Image style={styles.img2} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/Foto-Pantai-Pacitan-Terbaru-Bagi-mereka-yang-bersedih-lihatlah.jpg?alt=media&token=8b32109f-7946-45b1-a778-671d74e0fe48' }}/>
+            <Text style={styles.tr}>Pantai Kasap</Text>
           </View>
           <View style={{ marginLeft: 10 }}>
-            <Image style={styles.img2} source={{ uri: 'https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg?impolicy=fcrop&w=1600&h=1066&q=medium' }}/>
-            <Text style={styles.tr}>Bali</Text>
+            <Image style={styles.img2} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/1582619721689.jpeg?alt=media&token=ae5eb6ca-7a1b-401c-9211-d1ae77122eb7' }}/>
+            <Text style={styles.tr}>Pantai Pancer Door</Text>
           </View>
           <View style={{ marginLeft: 10 }}>
-            <Image style={styles.img2} source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Alappuzha_Boat_Beauty_W.jpg' }}/>
-            <Text style={styles.tr}>Kerala</Text>
+            <Image style={styles.img2} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/pantai-klayar.jpg?alt=media&token=bc6682cd-d8e0-4d76-854c-13ec8c26c6ce' }}/>
+            <Text style={styles.tr}>Pantai Klayar</Text>
           </View>
         </ScrollView>
       </View>
@@ -76,11 +80,11 @@ const Hal1 = () => {
       </View>
 
       {/* --- TOP DESTINATION SECTION --- */}
-      <View style={styles.td}>
+      {/* <View style={styles.td}>
       <Image style={styles.img3} source={{ uri: 'https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900' }}/>
         <Text style={{ color: '#FFF', fontSize: 16, marginTop: 20 }}>Top Destination</Text>
         <Text style={{ color: '#FFF', fontSize: 17, marginTop: 5, fontWeight: 'bold' }}>Paris</Text>
-      </View>
+      </View> */}
       </ScrollView>
     </View>  
     
@@ -92,31 +96,34 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'black',
   },
+  at:{
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'black',
+  },
   atas:{
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    height: 70,
-    width: '100%',
+    alignItems: 'center',
+    height: 50,
+    width: '95%',
     backgroundColor: '#FFF',
-    borderRadius: 20,
+    borderRadius: 50,
+    marginVertical: 10,
   },
   img0:{
     height: 30,
     width: 30,
-    marginTop: 20,
     borderRadius: 50,
   },
   sb:{
-    height: 30,
+    height: 40,
     width: 240,
-    marginTop: 20,
     borderRadius: 10,
   },
   tb:{
     color: 'black',
-    textAlign: 'center',
-    fontSize: 20,
-    marginTop: 40,
+    textAlign: 'left',
   },
   img1:{
     borderRadius: 40,
@@ -129,18 +136,20 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     left: 0,
+    paddingBottom: 20,
+    paddingLeft:15,
     width: window.width,
     height: window.height / 2.5,
     borderRadius: 40,
     // borderBottomLeftRadius: 40,
     // borderBottomRightRadius: 40,
     backgroundColor: '#00000050',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
   },
   img2:{
-    height: 100,
-    width: 120,
+    height: 150,
+    width: 150,
     borderRadius: 5,
   },
   tr:{
