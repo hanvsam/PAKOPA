@@ -1,6 +1,6 @@
 import React from 'react';
-import Destinasi from './Screens/destdetail';
-import Home from './Screens/Home';
+import Destinasi from './screens/destdetail';
+import Home from './screens/Home';
 
 const App = () => {
   return(
