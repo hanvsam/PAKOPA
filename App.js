@@ -1,10 +1,11 @@
 import React from 'react';
-import Hal1 from './Screens/Main';
+import Destinasi from './Screens/destdetail';
+import Home from './Screens/Home';
 
 const App = () => {
   return(
     <>
-      <Hal1/>
+      <Destinasi/>
     </>
   );
 };

@@ -12,11 +12,7 @@ import {
 } from 'react-native';
 const window = Dimensions.get('window')
 
-const Hal1 = () => {
-  // this.props.navigation.setOptions({
-  //   headerBackTitle: '',
-  //   headerShown: false
-  // })
+const Home = () => {
   const [text, onChangeText] = React.useState("");
   return(
     
@@ -29,14 +25,14 @@ const Hal1 = () => {
         <View style={styles.sb}>
           <TextInput style={styles.tb} onChangeText={onChangeText} value={text} placeholder="Cari Wisata Kamu"></TextInput>
         </View>
-        <Image style={styles.img0} source={{ uri: 'https://www.travelingajadulu.com/wp-content/uploads/2020/03/singapore-1-960x600.jpg?w=200&h=200' }}/>
+        <Image style={styles.img0} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/pngwing.com.png?alt=media&token=8c401ada-8747-413a-9389-b9abb050ea03' }}/>
       </View>
       </View>
       
 
       <ScrollView>
       {/* --- WELCOME SECTION --- */}
-      <View style={{ marginTop: 10 }}>
+      <View style={{ marginTop: 5 }}>
         <Image style={styles.img1} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/klayar-via-pambudi-yoga-perdana.jpg?alt=media&token=b0dca9ff-da74-484b-b6bd-cf100ab8ebfb' }}/>
         <View style={styles.lp1}>
           <Text style={{ fontSize: 22, color: '#FFF', fontFamily: 'manrope', fontWeight: 'bold'}}>Selamat Datang</Text>
@@ -112,8 +108,8 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   img0:{
-    height: 30,
-    width: 30,
+    height: 35,
+    width: 35,
     borderRadius: 50,
   },
   sb:{
@@ -124,6 +120,7 @@ const styles = StyleSheet.create({
   tb:{
     color: 'black',
     textAlign: 'left',
+    fontWeight:'500'
   },
   img1:{
     borderRadius: 40,
@@ -188,4 +185,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Hal1;
+export default Home;
