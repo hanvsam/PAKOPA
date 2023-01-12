@@ -10,6 +10,7 @@ import {
     TouchableOpacity,
     TextInput,
 } from 'react-native';
+import { Button } from '../../Component';
 
 const window = Dimensions.get('window')
 
@@ -21,10 +22,14 @@ const Destinasi = () => {
         
         {/* --- GAMBAR DESTINASI --- */}
       <View style={{ marginTop: 5 }}>
+        
         <Image style={styles.mainImage} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/1582619721689.jpeg?alt=media&token=ae5eb6ca-7a1b-401c-9211-d1ae77122eb7' }}/>
         <View style={styles.lp1}>
+          <Button style={styles.icon}></Button>
+          <View>
           <Text style={{ fontSize: 24, color: '#FFF', fontFamily: 'manrope', fontWeight: 'bold'}}>Pantai Pancer Door</Text>
           <Text style={{ fontSize: 20, color: '#FFF'}}>6,1 Km Dari Pusat Kota</Text>
+          </View>
         </View>
       </View>
 
@@ -69,18 +74,19 @@ const styles = StyleSheet.create({
         width:'100%',
         height:500,
         borderBottomLeftRadius:50,
-        borderBottomRightRadius:50
+        borderBottomRightRadius:50,
     },
     lp1:{
         position: 'absolute',
         top: 0,
         left: 0,
+        paddingTop: 20,
         paddingBottom: 20,
         paddingLeft:15,
         width: window.width,
         height: window.height / 1.550,
         alignItems: 'flex-start',
-        justifyContent: 'flex-end',
+        justifyContent: 'space-between',
       },
       informasibackground:{
         fontSize: 22, 
@@ -114,6 +120,12 @@ const styles = StyleSheet.create({
         fontSize: 21, 
         fontFamily: 'manrope',
         paddingBottom:5,
+      },
+      icon:{
+        height: 35,
+        width: 35,
+        borderRadius: 50,
+        backgroundColor: '#FFF',
       }
 
   });

@@ -10,9 +10,10 @@ import {
     TouchableOpacity,
     TextInput,
 } from 'react-native';
+import { Button } from '../../Component';
 const window = Dimensions.get('window')
 
-const Home = () => {
+const Home = ({navigation}) => {
   const [text, onChangeText] = React.useState("");
   return(
     
@@ -70,9 +71,7 @@ const Home = () => {
       {/* --- TODAY SECTION --- */}
       <View style={styles.tio}>
         <Text style={{ color: '#FFF' }}>Today's offer</Text>
-        <TouchableOpacity style={styles.cio}>
-          <Text style={{ color: '#FFF', fontWeight: 'bold' }}>Check it out</Text>
-        </TouchableOpacity>
+        <Button title="Check it out !!" onPress={() => {navigation.navigate('Destinasi')}} />
       </View>
 
       {/* --- TOP DESTINATION SECTION --- */}
