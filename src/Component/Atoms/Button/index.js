@@ -3,7 +3,6 @@ import React from 'react'
 
 const Button = ({onPress, title}) => {
   return (
-    
     <TouchableOpacity onPress={onPress} style={styles.cio}>
         <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>

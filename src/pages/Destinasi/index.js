@@ -14,7 +14,7 @@ import { Button } from '../../Component';
 
 const window = Dimensions.get('window')
 
-const Destinasi = () => {
+const Destinasi = ({navigation}) => {
     const [text, onChangeText] = React.useState("");
     return(
         <ScrollView>
@@ -25,7 +25,7 @@ const Destinasi = () => {
         
         <Image style={styles.mainImage} source={{ uri: 'https://firebasestorage.googleapis.com/v0/b/aplikasi-wisata-pacitan.appspot.com/o/1582619721689.jpeg?alt=media&token=ae5eb6ca-7a1b-401c-9211-d1ae77122eb7' }}/>
         <View style={styles.lp1}>
-          <Button style={styles.icon}></Button>
+          <Button title="  " onPress={() => {navigation.navigate('Homepage')}} />
           <View>
           <Text style={{ fontSize: 24, color: '#FFF', fontFamily: 'manrope', fontWeight: 'bold'}}>Pantai Pancer Door</Text>
           <Text style={{ fontSize: 20, color: '#FFF'}}>6,1 Km Dari Pusat Kota</Text>
